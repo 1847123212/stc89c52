@@ -16,7 +16,7 @@
 #if _USE_XFUNC_OUT
 //#include <stdarg.h>
 //volatile void (*xfunc_out)(unsigned char);	/* Pointer to the output stream */
-DATA unsigned int xfunc_out;
+unsigned int xfunc_out;
 static DATA char *outptr;
 
 /*----------------------------------------------*/
@@ -56,7 +56,7 @@ void xputs (					/* Put a string to the default device */
 
 #if _USE_XFUNC_IN
 //unsigned char (*xfunc_in)(void);	/* Pointer to the input stream */
-DATA unsigned int xfunc_in;
+unsigned int xfunc_in;
 /*----------------------------------------------*/
 /* Get a character from the input,if empty then block */
 /*----------------------------------------------*/
